@@ -14,68 +14,42 @@ body{
     background-position: left center;
     margin-bottom: 60px;
 }
-.container_nav{
-    padding: 12px;
+
+.header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    text-align: center;
-    text-decoration: none;
-    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
-    grid-gap: 2rem;
-}
-
-.menu nav a{
-    margin: 15px;
-    background-color: rgba(13, 75, 24, 0.203);
-    padding: 15px;
-    align-items: center;
-    font-family: 'Inter';
-    text-shadow: 1px 2px 3px  #000000 ;
-    color: #fdfefd;
+    padding: 16px;
+    padding-bottom: 40px;
     text-transform: uppercase;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    font-family: 'Inter';
+    width: 70%;
 }
-
-a:link {
+.logo{
+    padding-left: 10%;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+    gap: 30px;
+}
+.navbar a{
     color: #ffffff;
     text-decoration: none;
-} 
+    padding: 14px;
+}
 
-a:visited {
-
-    color: #ffffff;
+.navlink a{
+    background-color: #035f124e;
+    border-radius: 6px;
     text-decoration: none;
-}
-
-a:hover {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:active {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.menu nav ul{
-    margin: 0px 150px 0 0;
-}
-
-.menu nav li{ 
-    padding: 15px;
-    display: inline-block;
     letter-spacing: 3px;
 }
 
-li:hover{
-  
-    background-color: #e3dc55; 
-    border-radius: 5px;
-    text-decoration: none;
+.navbar a:hover{
+    background-color: #c4ef58;
+    color: #010101;
 }
 
 .titulo{
@@ -104,12 +78,11 @@ li:hover{
 
 }
 
-button{
+.saiba_mais{
     margin: 15px;
     margin-bottom: 60px;
     background-color: rgba(255, 255, 255, 0);
-    color: rgb(252, 252, 252);
-    border: 2px solid #4CAF50;
+    border: 2px solid #4caf4fae;
     border-radius: 30%;
     transition-duration: 0.4s; 
     text-align: center;
@@ -119,8 +92,20 @@ button{
     text-decoration: none;
   
 }
+ a:link {
+    text-decoration: none;
+    color: #091b9e;
+} 
+.saiba_mais a{
+    color: #0d12a2;
+}
+
+.saiba_mais a:hover{
+    color: #ffffff;
+}
 
 button:hover{
+    color: #fbfbfb;
     background-color: #4CAF50;
 }
 
@@ -221,6 +206,7 @@ button:hover{
 
 .btn{
     background-color: #4CAF50;
+    color: #f9f9f9;
     display: inline-block;
     padding: 12px;
     border-radius: 10px;
@@ -405,3 +391,4 @@ footer{
     padding: 0;
     margin: 10px auto;
 }
+
