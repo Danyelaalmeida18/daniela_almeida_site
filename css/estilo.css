@@ -419,7 +419,7 @@ footer{
     text-align: center;
 }
 
-@media all and (max-width: 520px){
+@media all and (max-width: 320px){
     nav{
         visibility: hidden;
     }
