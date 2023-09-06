@@ -14,42 +14,79 @@ body{
     background-position: left center;
     margin-bottom: 60px;
 }
-
-.header{
+nav{
     display: flex;
-    padding: 16px;
-    padding-bottom: 40px;
-    text-transform: uppercase;
-    justify-content: space-between;
-    letter-spacing: 2px;
-    font-family: 'Inter';
+    height: 70px;
     width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap:wrap;
+ 
 }
-.logo{
-    padding-left: 10%;
-}
-.navbar ul{
+nav ul{
     display: flex;
-    list-style-type: none;
-    font-size: 16px;
-    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
 }
-.navbar a{
+nav ul li{
+    margin: 0 5px;
+}
+ nav ul li a{
     color: #ffffff;
+    font-family: 'Inter';
+    text-transform: uppercase;
     text-decoration: none;
-    padding: 14px;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    transform: all 0.3s ease;
 }
 
-.navlink a{
-    background-color: #035f124e;
-    border-radius: 6px;
-    text-decoration: none;
-    letter-spacing: 3px;
+nav ul li a.active,
+nav ul li a:hover{
+    background: #ceed5fa4;
 }
 
-.navbar a:hover{
-    background-color: #c4ef58;
-    color: #010101;
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+
+@media all and (max-width: 900px){
+    nav .menu-btn i{
+        display: flex;
+    }
+    nav ul{
+        position: fixed;
+        top: 85px;
+        left: -100%;
+        background-color: #205a27e6;
+        height: 50vh;
+        width: 90%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 23px ;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background-color: #ceed5fa4;
+        border-radius: 0;
+        padding: 10px 150px;
+}
 }
 
 .titulo{
@@ -94,6 +131,7 @@ body{
 }
  a:link {
     text-decoration: none;
+
 } 
 .saiba_mais a{
     color: #0d12a2;
@@ -205,7 +243,7 @@ button:hover{
 
 .btn{
     background-color: #4CAF50;
-    color: #f9f9f9;
+    color: #f4f4f4;
     display: inline-block;
     padding: 12px;
     border-radius: 10px;
@@ -381,7 +419,7 @@ footer{
     text-align: center;
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 520px){
     nav{
         visibility: hidden;
     }
@@ -393,4 +431,8 @@ footer{
     padding: 0;
     margin: 10px auto;
 }
+
+
+
+
 
