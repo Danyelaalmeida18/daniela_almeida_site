@@ -65,7 +65,7 @@ nav .menu-btn i{
         top: 85px;
         left: -100%;
         background-color: #205a27e6;
-        height: 50vh;
+        height: 40vh;
         width: 90%;
         text-align: center;
         display: block;
@@ -424,6 +424,23 @@ footer{
         visibility: hidden;
     }
 }
+@media all and (max-width: 460px){
+
+    .titulo_podcast{
+        font-size: 28px;
+        text-align: center;
+        padding: 10px;
+    }
+    figure{
+        padding: 0;
+    }
+    .container{
+        text-align: center;
+        padding: 5px;
+    }
+
+}
+
 
 .audio, .podcast{
     display:block;
