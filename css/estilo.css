@@ -56,7 +56,7 @@ nav .menu-btn i{
     display: none;
 }
 
-@media all and (max-width: 900px){
+@media all and (max-width: 768px){
     nav .menu-btn i{
         display: flex;
     }
@@ -65,8 +65,8 @@ nav .menu-btn i{
         top: 85px;
         left: -100%;
         background-color: #205a27e6;
-        height: 40vh;
-        width: 90%;
+        height: 50%;
+        width: 70%;
         text-align: center;
         display: block;
         transition: all 0.3s ease;
@@ -79,13 +79,14 @@ nav .menu-btn i{
         margin: 50px 0;
     }
     nav ul li a{
-        font-size: 23px ;
+        font-size: 20px;
+	text-align: center;
     }
     nav ul li a.active,
     nav ul li a:hover{
         background-color: #ceed5fa4;
         border-radius: 0;
-        padding: 10px 150px;
+        padding: 8px 50px;
 }
 }
 
