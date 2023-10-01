@@ -62,10 +62,10 @@ nav .menu-btn i{
     }
     nav ul{
         position: fixed;
-        top: 85px;
+        top: 80px;
         left: -100%;
         background-color: #205a27e6;
-        height: 50%;
+        height: 30%;
         width: 70%;
         text-align: center;
         display: block;
@@ -76,11 +76,11 @@ nav .menu-btn i{
     }
     nav ul li{
         width: 100%;
-        margin: 50px 0;
+        margin: 40px 0;
     }
     nav ul li a{
         font-size: 20px;
-	text-align: center;
+	
     }
     nav ul li a.active,
     nav ul li a:hover{
@@ -441,7 +441,16 @@ footer{
     }
 
 }
+@media all and (max-width: 629px){
+    nav ul{
+        height: 38%;
+        width: 70%;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
 
+}
 
 .audio, .podcast{
     display:block;
